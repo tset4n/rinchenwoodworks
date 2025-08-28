@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Rinchen Woodworks</title>
+  <meta name="description" content="We build by appointment. Send a message and we will call you back.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- SEO / Social -->
+  <meta property="og:title" content="Contact | Rinchen Woodworks">
+  <meta property="og:description" content="Request a call back for custom Tibetan carpentry.">
+  <meta property="og:image" content="og/rinchen-woodworks.jpg">
+  <meta property="og:url" content="https://rinchenwoodworks.com/contact.html">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="./index.html" class="logo">Rinchen Woodworks</a>
+      <nav class="nav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./work.html">Work</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <h1>Contact</h1>
+      <p>We build by appointment. Send a message and we will call you back.</p>
+      
+      <div class="contact-info">
+        <p><strong>Phone/WhatsApp:</strong> <a href="tel:XXXXXXX">XXXXXXX</a></p>
+        <p><strong>Address:</strong> Near Hotel Buddha House, Norbulingka, Kangra, Himachal Pradesh 176057</p>
+        <p><strong>Hours:</strong> By appointment</p>
+      </div>
+
+      <form class="contact-form" action="#">
+        <div id="form-result"></div>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message (optional)</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn">Request a call back</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© Rinchen Woodworks. Supported by Tibet Fund through TibetStartup!</p>
+      <p><a href="/privacy.html">Privacy</a> • <a href="/contact.html">Contact</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.querySelector('.contact-form');
+    const formResult = document.getElementById('form-result');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      formResult.textContent = 'Thank you. We’ll call you back soon.';
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
