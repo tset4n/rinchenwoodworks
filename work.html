@@ -21,7 +21,7 @@
 
   <header class="header">
     <div class="container">
-      <a href="./index.html" class="logo">Rinchen Woodworks</a>
+      <a href="./index.html" class="logo"><img src="assets/img/rinchenwoodworks_logo.png" alt="Rinchen Woodworks" class="logo-img"></a>
       <nav class="nav">
         <ul>
           <li><a href="./index.html">Home</a></li>
@@ -35,59 +35,20 @@
 
   <main class="main-content">
     <div class="container">
-      <h1>Our Work</h1>
-      <p>A small workshop in Norbulingka, carving meaningful Tibetan designs with care. Here are a few recent pieces.</p>
+      <h1>Our recent works</h1>
+      <p class="intro">A small workshop in Norbulingka, carving meaningful Tibetan designs with care. Here are a few recent pieces.</p>
 
-      <div class="gallery-grid">
-        <figure class="gallery-item">
-          <img src="assets/img/placeholder.png" alt="Hand-carved altar door with endless-knot motif in teak, Norbulingka." loading="lazy">
-          <figcaption>Altar door with endless-knot motif — teak, 2024</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/placeholder.png" alt="Window frame with cloud motif — deodar, 2023" loading="lazy">
-          <figcaption>Window frame with cloud motif — deodar, 2023</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/placeholder.png" alt="Temple cabinet restoration — walnut, 2025" loading="lazy">
-          <figcaption>Temple cabinet restoration — walnut, 2025</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/placeholder.png" alt="Prayer room ceiling panel — pine, 2024" loading="lazy">
-          <figcaption>Prayer room ceiling panel — pine, 2024</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/placeholder.png" alt="Café front fascia — reclaimed wood, carved bands, 2024" loading="lazy">
-          <figcaption>Café front fascia — reclaimed wood, carved bands, 2024</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/placeholder.png" alt="Lotus lintel — teak, oil finish, 2023" loading="lazy">
-          <figcaption>Lotus lintel — teak, oil finish, 2023</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/placeholder.png" alt="Door frame with dorje borders — deodar, 2025" loading="lazy">
-          <figcaption>Door frame with dorje borders — deodar, 2025</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/placeholder.png" alt="Shrine side panel — walnut, matte finish, 2024" loading="lazy">
-          <figcaption>Shrine side panel — walnut, matte finish, 2024</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/placeholder.png" alt="Window grill with knotwork — teak, 2024" loading="lazy">
-          <figcaption>Window grill with knotwork — teak, 2024</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/placeholder.png" alt="Process: close-up of chisel carving lotus motif at Rinchen Woodworks." loading="lazy">
-          <figcaption>Process: hand-carving detail — workshop, 2025</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/placeholder.png" alt="Process: sanding and finishing — workshop, 2025" loading="lazy">
-          <figcaption>Process: sanding and finishing — workshop, 2025</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/placeholder.png" alt="Process: layout lines on timber — workshop, 2025" loading="lazy">
-          <figcaption>Process: layout lines on timber — workshop, 2025</figcaption>
-        </figure>
+      <div id="gallery" class="gallery"></div>
+      <nav id="pager" class="pager" aria-label="Gallery pages"></nav>
+
+      <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+        <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+        <img src="" alt="" class="lightbox-image">
       </div>
+
+      <script src="assets/js/gallery.js" defer></script>
     </div>
   </main>
 
