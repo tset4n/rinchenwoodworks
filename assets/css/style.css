@@ -68,6 +68,10 @@ a:hover {
   padding: 0;
 }
 
+.main-content .container {
+  padding-bottom: 40px; /* Add padding to the bottom of the container within main content */
+}
+
 .section-bg {
   background-color: var(--section-bg-color);
   padding: 4rem 0;
@@ -129,12 +133,16 @@ a:hover {
 
 /* --- Footer --- */
 .footer {
-  padding: 0 0 3rem 0; /* Remove top padding, keep other padding */
-  margin-top: 40px; /* Consistent space from element above */
+  background-color: #000; /* Solid black background */
+  padding: 4rem 0; /* Adjusted padding for vertical centering */
   text-align: center;
   font-size: 0.9rem;
-  color: #555;
-  border-top: 1px solid var(--border-color);
+  color: #fff; /* White text color */
+  border-top: none; /* Remove border-top */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
 }
 
 .footer p {
@@ -142,7 +150,12 @@ a:hover {
 }
 
 .footer a {
-  color: #555;
+  color: #fff; /* White link color */
+  text-decoration: none; /* No underline by default */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover */
 }
 
 /* --- Components --- */
@@ -307,7 +320,6 @@ a:hover {
 .pager {
   text-align: center;
   margin-top: 40px; /* Space between images and pagination */
-  margin-bottom: 40px; /* Space between pagination and footer */
 }
 
 .pager a {
