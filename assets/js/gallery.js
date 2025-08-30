@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const fetchImages = async () => {
     try {
-      const response = await fetch('assets/data/album.json'); // No leading slash as per instruction
+      const response = await fetch('./assets/data/album.json');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const galleryItem = document.createElement('div');
       galleryItem.className = 'gallery-item';
       const img = document.createElement('img');
-      img.src = encodeURI(item.src);
+      img.src = `./${encodeURI(item.src)}`;
       img.alt = item.alt || `Gallery image ${start + index + 1}`;
       img.loading = 'lazy';
       img.decoding = 'async';
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const updateLightboxImage = () => {
-    lightboxImage.src = encodeURI(images[activeImageIndex].src);
+    lightboxImage.src = `./${encodeURI(images[activeImageIndex].src)}`;
     lightboxImage.alt = images[activeImageIndex].alt || `Gallery image ${activeImageIndex + 1}`;
   };
 
