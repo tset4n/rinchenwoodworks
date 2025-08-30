@@ -576,3 +576,63 @@ a:focus, button:focus, input:focus, textarea:focus, summary:focus {
     grid-template-columns: 1fr;
   }
 }
+
+/* --- About Page --- */
+.about-grid {
+  display: grid;
+  gap: 24px;
+  margin-top: 2rem;
+  text-align: left;
+  align-items: start; /* Align items to the top */
+}
+
+.about-story-col {
+  grid-area: story;
+}
+
+.about-image-col {
+  grid-area: image;
+  padding-top: 0; /* Ensure no top padding */
+}
+
+.about-image-col img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block; /* Remove extra space below image */
+  margin: 0 auto; /* Center image if it's smaller than column */
+}
+
+.about-story-col h2,
+.about-story-col h4 {
+  margin-top: 0; /* Remove top margin for first text elements */
+}
+
+.founder-title {
+  font-style: italic;
+  font-size: 1.5rem; /* Slightly larger than paragraph, similar to H4 */
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 1em;
+}
+
+@media (min-width: 769px) {
+  .about-grid {
+    grid-template-columns: 1fr 2fr; /* Image column narrower, story column wider */
+    grid-template-areas:
+      "image story"
+      ".     story"; /* Image in first column, story starts in second and flows below */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "story";
+  }
+  .about-image-col {
+    order: -1; /* Image first on mobile */
+    margin-bottom: 1.5rem; /* Spacing between image and text on mobile */
+  }
+}
