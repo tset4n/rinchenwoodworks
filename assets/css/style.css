@@ -578,33 +578,26 @@ a:focus, button:focus, input:focus, textarea:focus, summary:focus {
 }
 
 /* --- About Page --- */
-.about-grid {
-  display: grid;
-  gap: 24px;
-  margin-top: 2rem;
-  text-align: left;
-  align-items: start; /* Align items to the top */
+.about-story-content {
+  text-align: left; /* Align text to left within its container */
+  margin-top: 2rem; /* Add some top margin to the section */
+  overflow: hidden; /* Clear floats within this container */
 }
 
-.about-story-col {
-  grid-area: story;
-}
-
-.about-image-col {
-  grid-area: image;
-  padding-top: 0; /* Ensure no top padding */
-}
-
-.about-image-col img {
-  max-width: 100%;
+.founder-image {
+  float: left;
+  width: 30%; /* Adjust as needed, e.g., 30% of container width */
+  max-width: 250px; /* Max width for the image */
   height: auto;
+  margin-right: 24px; /* Spacing to the right of the image */
+  margin-bottom: 16px; /* Spacing below the image */
   border-radius: 8px;
-  display: block; /* Remove extra space below image */
-  margin: 0 auto; /* Center image if it's smaller than column */
+  object-fit: cover;
+  object-position: center;
 }
 
-.about-story-col h2,
-.about-story-col h4 {
+.about-story-content h2,
+.about-story-content h4 {
   margin-top: 0; /* Remove top margin for first text elements */
 }
 
@@ -615,24 +608,14 @@ a:focus, button:focus, input:focus, textarea:focus, summary:focus {
   margin-bottom: 1em;
 }
 
-@media (min-width: 769px) {
-  .about-grid {
-    grid-template-columns: 1fr 2fr; /* Image column narrower, story column wider */
-    grid-template-areas:
-      "image story"
-      ".     story"; /* Image in first column, story starts in second and flows below */
-  }
-}
-
 @media (max-width: 768px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "image"
-      "story";
+  .founder-image {
+    float: none; /* Remove float on mobile */
+    width: 100%; /* Full width on mobile */
+    margin-right: 0;
+    margin-bottom: 1.5rem; /* Spacing below image on mobile */
   }
-  .about-image-col {
-    order: -1; /* Image first on mobile */
-    margin-bottom: 1.5rem; /* Spacing between image and text on mobile */
+  .about-story-content {
+    text-align: center; /* Center text on mobile if desired */
   }
 }
