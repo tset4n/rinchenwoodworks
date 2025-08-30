@@ -129,7 +129,8 @@ a:hover {
 
 /* --- Footer --- */
 .footer {
-  padding: 3rem 0;
+  padding: 0 0 3rem 0; /* Remove top padding, keep other padding */
+  margin-top: 40px; /* Consistent space from element above */
   text-align: center;
   font-size: 0.9rem;
   color: #555;
@@ -250,7 +251,6 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  margin-bottom: 40px; /* Space between images and pagination */
 }
 
 .gallery-item img {
