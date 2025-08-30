@@ -281,7 +281,7 @@ a:hover {
 
 .featured-grid a {
   display: block;
-  aspect-ratio: 4 / 1; /* Wide banner look */
+  aspect-ratio: 1 / 1; /* Square thumbnails */
   overflow: hidden;
   border: 1px solid var(--border-color);
   transition: transform 0.2s, box-shadow 0.2s;
