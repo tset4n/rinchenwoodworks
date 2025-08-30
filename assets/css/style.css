@@ -90,21 +90,23 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: var(--bg-color);
+  background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
   padding: 5px 0;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: none; /* Remove border-bottom */
 }
 
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #fff; /* White text color for all children */
 }
 
 .logo {
   font-weight: 700;
   font-size: 1.5rem;
   text-decoration: none;
+  color: #fff; /* Ensure logo text is white */
 }
 
 .logo-img {
@@ -124,11 +126,17 @@ a:hover {
 .nav a {
   text-decoration: none;
   font-weight: 500;
+  color: #fff; /* Ensure menu items are white */
+}
+
+.nav a:hover {
+  text-decoration: underline; /* Underline on hover */
 }
 
 .nav a.active {
   text-decoration: underline;
   text-decoration-thickness: 2px;
+  /* Could add a slightly different color here if needed, e.g., color: rgba(255,255,255,0.8); */
 }
 
 /* --- Footer --- */
