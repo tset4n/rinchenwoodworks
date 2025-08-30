@@ -162,10 +162,10 @@
         const itemsToShow = data.slice(0, 8);
         let gridHTML = '';
 
-        itemsToShow.forEach(itemSrc => {
+        itemsToShow.forEach(item => {
           gridHTML += `
             <a href="work.html">
-              <img src="${itemSrc}" alt="A piece of Rinchen Woodworks custom carpentry." loading="lazy">
+              <img src="./${item.src}" alt="${item.alt}" loading="lazy">
             </a>
           `;
         });
