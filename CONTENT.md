@@ -120,10 +120,7 @@ About (/about)
 
 Title: About Rinchen Woodworks
 
-Short bio (web version, ~140 words)
-Rinchen la learned woodcraft at Norbulingka Institute and built his name through precise Tibetan carving. Life tested him. He faced loss in childhood and later struggled with addiction. With time, reflection, and help, he chose a different path. He has remained sober and rebuilt his craft with quiet focus. Today he runs a small workshop near Norbulingka where every line and symbol carries meaning. “Even a small change in a design can change its message,” he says. With support from Tibet Fund through TibetStartup!, we are helping him share this craft online so more people can find honest, well‑made work rooted in Tibetan heritage.
-
-Full founder story (accordion content — paste as is)
+Rinchen’s Story
 Meet Rinchen la
 Founder, Rinchen Wood Works – Norbulingka
 Some call him Pawo, some Par Desi.
