@@ -250,6 +250,7 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+  margin-bottom: 40px; /* Space between images and pagination */
 }
 
 .gallery-item img {
@@ -305,7 +306,8 @@ a:hover {
 
 .pager {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 40px; /* Space between images and pagination */
+  margin-bottom: 40px; /* Space between pagination and footer */
 }
 
 .pager a {
