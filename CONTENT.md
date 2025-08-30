@@ -122,9 +122,9 @@ Title: About Rinchen Woodworks
 
 Rinchen’s Story
 Meet Rinchen la
-Founder, Rinchen Wood Works – Norbulingka
+Founder, Rinchen Wood Works, Norbulingka
 Some call him Pawo, some Par Desi.
-Rinchen la came to India from Tibet when he was just 8 years old — completely alone. He never saw his parents again. They passed away while he was still here, in exile, and he never got the chance to say goodbye. That loss has stayed with him quietly, over the years.
+Rinchen la came to India from Tibet when he was just 8 years old, completely alone. He never saw his parents again. They passed away while he was still here, in exile, and he never got the chance to say goodbye. That loss has stayed with him quietly, over the years.
 
 He learned woodcraft at Norbulingka Institute — a skill he slowly mastered through dedication and hard work. But life outside the workshop was full of struggle. He was often taken advantage of, made to work by people he trusted, and left unpaid or unrecognized.
 
