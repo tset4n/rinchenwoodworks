@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,67 +54,72 @@
 
   <header class="header">
     <div class="container">
-      <a href="/index.html" class="logo"><img src="assets/img/rinchenwoodworks_logo.png" alt="Rinchen Woodworks" class="logo-img"></a>
+      <a href="./index.html" class="logo"><img src="assets/img/rinchenwoodworks_logo.png" alt="Rinchen Woodworks" class="logo-img"></a>
       <nav class="nav">
         <ul>
-          <li><a href="/" class="active">Home</a></li>
-          <li><a href="/work.html">Work</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./work.html">Work</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="main-content">
-    <section class="hero">
-      <div class="hero-carousel">
-        <img src="Carousal%20images/WhatsApp%20Image%202025-08-22%20at%2011.33.43%20(1).webp" alt="">
-        <img src="Carousal%20images/WhatsApp%20Image%202025-08-22%20at%2011.33.49%20(2).webp" alt="">
-        <img src="Carousal%20images/WhatsApp%20Image%202025-08-22%20at%2011.33.55%20(1).webp" alt="">
-        <img src="Carousal%20images/WhatsApp%20Image%202025-08-22%20at%2011.33.55.webp" alt="">
-        <img src="Carousal%20images/WhatsApp%20Image%202025-08-22%20at%2011.34.02%20(1).webp" alt="">
-        <img src="Carousal%20images/WhatsApp%20Image%202025-08-22%20at%2011.34.04%20(2).webp" alt="">
+  <section class="hero">
+    <div class="hero-carousel">
+      <img src="Carousal%20images/WhatsApp%20Image%202025-08-22%20at%2011.33.43%20(1).webp" alt="">
+      <img src="Carousal%20images/WhatsApp%20Image%202025-08-22%20at%2011.33.49%20(2).webp" alt="">
+      <img src="Carousal%20images/WhatsApp%20Image%202025-08-22%20at%2011.33.55%20(1).webp" alt="">
+      <img src="Carousal%20images/WhatsApp%20Image%202025-08-22%20at%2011.33.55.webp" alt="">
+      <img src="Carousal%20images/WhatsApp%20Image%202025-08-22%20at%2011.34.02%20(1).webp" alt="">
+      <img src="Carousal%20images/WhatsApp%20Image%202025-08-22%20at%2011.34.04%20(2).webp" alt="">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <h1>Rinchen Woodworks</h1>
+      <p class="subhead">Custom Tibetan carpentry in Norbulingka, Himachal Pradesh</p>
+      <p>Hand-carved, purposeful, built to last.</p>
+      <div class="cta-buttons">
+        <a href="tel:XXXXXXX" class="btn">Call Now</a>
       </div>
-      <div class="hero-overlay"></div>
+    </div>
+  </section>
+
+  <main class="main-content">
+
+    <section id="featured-work" class="section-bg" style="display: none;">
       <div class="container">
-        <h1>Rinchen Woodworks</h1>
-        <p class="subhead">Custom Tibetan carpentry in Norbulingka, Himachal Pradesh</p>
-        <p>Hand-carved, purposeful, built to last.</p>
-        <div class="cta-buttons">
-          <a href="tel:XXXXXXX" class="btn">Call Now</a>
+        <h2 style="text-align: center;">Featured Work</h2>
+        <div class="featured-grid">
+          <!-- Images will be injected by JavaScript -->
+        </div>
+        <div class="view-more-container">
+          <a href="work.html" class="btn">View more</a>
         </div>
       </div>
     </section>
 
-    <section class="section-bg">
+    <section id="services">
       <div class="container">
-        <h2>What We Do</h2>
-        <ul>
-          <li>Custom Tibetan carvings</li>
-          <li>Doors, altars, prayer rooms, window frames</li>
-          <li>Restoration and repairs</li>
-          <li>Small fit-outs for homes, cafés, and temples</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2>Featured Work</h2>
-        <div class="gallery-grid">
-          <figure class="gallery-item">
-            <img src="assets/img/placeholder.png" alt="Altar door with endless-knot motif — teak" loading="lazy">
-            <figcaption>Altar door with endless-knot motif — teak</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/img/placeholder.png" alt="Window frame with cloud motif — deodar" loading="lazy">
-            <figcaption>Window frame with cloud motif — deodar</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/img/placeholder.png" alt="Temple cabinet restoration — walnut" loading="lazy">
-            <figcaption>Temple cabinet restoration — walnut</figcaption>
-          </figure>
+        <h2 style="text-align: center;">What We Do</h2>
+        <div class="services-grid">
+          <article class="service-card" tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-3 3 6 6 3-3a1 1 0 0 0 0-1.42L16.42 5a1 1 0 0 0-1.42 0z"/><path d="m22 2-5.5 5.5"/><path d="M4 13.5V20h6.5L18 12.5 11.5 6 4 13.5z"/></svg>
+            <p>Custom Tibetan carvings</p>
+          </article>
+          <article class="service-card" tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14"/><path d="M2 20h20"/><path d="M14 12v.01"/></svg>
+            <p>Doors, altars, prayer rooms, window frames</p>
+          </article>
+          <article class="service-card" tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12a2.27 2.27 0 0 0-2-2v-1a2.27 2.27 0 0 0-2-2h-1a2.27 2.27 0 0 0-2 2c0 .5.2.9.6 1.2l-3.1 3.1a2.27 2.27 0 0 0-1.2-.6 2.27 2.27 0 0 0-2.2 2.2c0 .5.2 1 .6 1.4l-3 3a2.27 2.27 0 0 0-1.4-.6 2.27 2.27 0 0 0-2.2 2.2c0 1.2 1 2.2 2.2 2.2s2.2-1 2.2-2.2c0-.5-.2-1-.6-1.4l3-3a2.27 2.27 0 0 0 1.4.6c1.2 0 2.2-1 2.2-2.2s-1-2.2-2.2-2.2c-.5 0-1 .2-1.4.6l3.1-3.1c.4-.3.6-.7.6-1.2a2.27 2.27 0 0 0 2-2h1a2.27 2.27 0 0 0 2-2v-1c.6-.3 1-1 1-1.8Z"/><path d="m15 5-3 3"/><path d="m9 11-3 3"/></svg>
+            <p>Restoration and repairs</p>
+          </article>
+          <article class="service-card" tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <p>Small fit-outs for homes, cafés, and temples</p>
+          </article>
         </div>
       </div>
     </section>
@@ -124,7 +128,7 @@
         <div class="container">
             <h2>About the Founder</h2>
             <p>Rinchen la learned woodcraft at Norbulingka Institute and rebuilt his life through his craft. Every line and symbol carries meaning and intention.</p>
-            <a href="/about.html">Read the full story →</a>
+            <a href="./about.html">Read the full story →</a>
         </div>
     </section>
 
@@ -137,11 +141,43 @@
     </div>
   </footer>
 
-</body>
-</html>
-p>
-    </div>
-  </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const featuredSection = document.getElementById('featured-work');
+    const gridContainer = featuredSection.querySelector('.featured-grid');
 
+    fetch('assets/data/album.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        if (!data || data.length === 0) {
+          console.warn('Album data is empty or not found.');
+          return;
+        }
+
+        const itemsToShow = data.slice(0, 8);
+        let gridHTML = '';
+
+        itemsToShow.forEach(itemSrc => {
+          gridHTML += `
+            <a href="work.html">
+              <img src="${itemSrc}" alt="A piece of Rinchen Woodworks custom carpentry." loading="lazy">
+            </a>
+          `;
+        });
+
+        gridContainer.innerHTML = gridHTML;
+        featuredSection.style.display = 'block';
+      })
+      .catch(error => {
+        console.error('Error fetching or processing album data:', error);
+        featuredSection.style.display = 'none';
+      });
+  });
+</script>
 </body>
 </html>
